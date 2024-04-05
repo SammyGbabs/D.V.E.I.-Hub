@@ -1,2 +1,1 @@
-# D.V.E.I.-Hub
-An Educational Platform to educate and enlighten young minds about the African Continent.
+front-end and back-end design for the app
