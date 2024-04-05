@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dddddd;
+    background-image: url(/design/images/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60rem;
+    overflow: hidden;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    text-align: left;
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    font-weight: 900;
+    font-size: 2rem;
+    top: 1rem;
+    left: 12rem;
+    color: #8e44ad;
+}
+
+h2 {position: absolute;
+    color: white;
+    left: 3rem;
+    top: 2rem;
+    z-index: 1;
+}
+
+#name,
+#email,
+#password,
+#confirm_password,
+#file {
+    width: 90%;
+    height: 3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #dddd;
+}
+
+#registrationMessage {
+    margin-top: -15px;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 14px;
+    color: red;
+}
+
+.file {
+    padding: 0.8rem;
+}
+
+#box {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 27rem;
+    left: 6.3rem;
+}
+
+label {
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.placing {
+    position: absolute;
+    left: 30rem;
+    top: 8rem;
+    height: 40rem;
+    width: 35rem;
+    padding: 5rem 3rem;
+    margin-top: -100px;
+    background-color: white;
+}
+
+.placing1 {
+    position: absolute;
+    left: 30rem;
+    top: 7rem;
+    height: 26rem;
+    width: 35rem;
+    padding: 5rem 3rem;
+    background-color: white;
+}
+
+span {
+    color: red;
+}
+
+.form {
+    position: absolute;
+    width: 90%;
+    top: 4rem;
+}
+
+.form p {
+    position: absolute;
+    left: 8rem;
+    top: 27rem;
+    font-size: larger;
+}
+
+.form button {
+    width: 90%;
+    height: 3rem;
+    background-color: #8e44ad;
+    border: none;
+    cursor: pointer;
+}
+
+.btn {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.btn:hover {
+    color: rgb(1, 36, 71);
+}
+
+.login {
+    color: #8e44ad;
+}
+
+.login:hover {
+    color: rgb(1, 36, 71);
+}
+
+.form h3 {
+    position: absolute;
+    left: 6.5rem;
+    margin-top: 2.5rem;
+    font-size: larger;
+}
+
+.para {
+    position: absolute;
+    width: 10rem;
+    height: 1.5rem;
+    top: 11.9rem;
+    left: 1.3rem;
+}
+
+.para1 {
+    position: absolute;
+    width: 10rem;
+    height: 1.5rem;
+    top: 10.9rem;
+    left: 20.5rem;
+}
+
+.btn4 {
+    font-size: larger;
+    color: white;
+}
+
+.login1 {
+    position: absolute;
+    top: 16rem;
+}
+
+.login2 {
+    position: absolute;
+    top: 31rem;
+}
