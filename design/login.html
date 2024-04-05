@@ -58,9 +58,6 @@
                 const data = await response.json();
                 // Handle successful login response
                 console.log(data);
-    
-                // Redirect or perform any other action upon successful login
-                // For example, redirecting to a new page:
                 window.location.href = 'home.html';
             } catch (error) {
                 console.error('Login error:', error);
