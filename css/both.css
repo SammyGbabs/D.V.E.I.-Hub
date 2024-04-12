@@ -5,14 +5,12 @@
 }
 
 body {
-    background-color: #dddddd;
     background-image: url(/images/bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 60rem;
-    overflow: hidden;
+    overflow-x: hidden;
+    min-height: 130vh;
 }
 
 a:link {
@@ -35,30 +33,30 @@ h1 {
     color: #8e44ad;
 }
 
-h2 {position: absolute;
+h2 {
+    position: absolute;
     color: white;
     left: 3rem;
     top: 2rem;
     z-index: 1;
 }
 
+/* Adjusted input fields and other elements for responsiveness */
 #name,
 #email,
 #password,
 #confirm_password,
 #file {
-    width: 90%;
+    width: 100%;
+    max-width: 450px;
     height: 3rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px auto; 
     border: none;
     background-color: #dddd;
 }
 
 #registrationMessage {
-    margin-top: -15px;
     text-align: center;
-    margin-left: 50px;
     font-size: 14px;
     color: red;
 }
@@ -68,7 +66,7 @@ h2 {position: absolute;
 }
 
 #box {
-    position: absolute;
+    position: static;
     width: 1.5rem;
     height: 1.5rem;
     top: 27rem;
@@ -82,48 +80,37 @@ label {
 
 .placing {
     position: absolute;
-    left: 30rem;
-    top: 8rem;
-    height: 40rem;
-    width: 35rem;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    top: 5rem;
+    height: auto; /* Adjusted height for responsiveness */
+    width: 90%; 
+    max-width: 500px; 
     padding: 5rem 3rem;
-    margin-top: -100px;
     background-color: white;
 }
 
 .placing1 {
     position: absolute;
-    left: 30rem;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
     top: 7rem;
-    height: 26rem;
-    width: 35rem;
+    height: auto; /* Adjusted height for responsiveness */
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 400px; /* Added max-width for responsiveness */
     padding: 5rem 3rem;
     background-color: white;
 }
 
-span {
-    color: red;
-}
-
-.form {
-    position: absolute;
-    width: 90%;
-    top: 4rem;
-}
-
-.form p {
-    position: absolute;
-    left: 8rem;
-    top: 27rem;
-    font-size: larger;
-}
-
+/* Adjusted button styles for responsiveness */
 .form button {
     width: 90%;
+    max-width: 350px; /* Added max-width to prevent excessive stretching on larger screens */
     height: 3rem;
     background-color: #8e44ad;
     border: none;
     cursor: pointer;
+    margin: 20px auto; /* Center horizontally with margin */
 }
 
 .btn {
@@ -179,4 +166,30 @@ span {
 .login2 {
     position: absolute;
     top: 31rem;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+        left: 1rem; /* Adjusted left position for smaller screens */
+    }
+
+    h2 {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+        left: 1rem; /* Adjusted left position for smaller screens */
+        top: 1rem; /* Adjusted top position for smaller screens */
+    }
+
+    .placing,
+    .placing1 {
+        padding: 3rem 1.5rem; /* Adjusted padding for smaller screens */
+    }
+
+    .form h3 {
+        position: absolute;
+        left: 6.5rem;
+        font-size: medium;
+        margin-top: 8px;
+    }
 }
