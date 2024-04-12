@@ -110,6 +110,7 @@ label {
     border: none;
     cursor: pointer;
     margin: 20px auto; /* Center horizontally with margin */
+    margin-top: -5px;
 }
 
 .btn {
@@ -131,25 +132,26 @@ label {
 
 .form h3 {
     position: absolute;
-    left: 6.5rem;
-    margin-top: 9.5rem;
+    left: 4.2rem;
+    margin-top: 7.5rem;
     font-size: larger;
 }
 
 .para {
-    position: absolute;
+    position: relative;
     width: 10rem;
     height: 1.5rem;
-    top: 11.9rem;
+    top: -1.25rem;
     left: 1.3rem;
 }
 
 .para1 {
     position: absolute;
     width: 10rem;
-    height: 1.5rem;
-    top: 10.9rem;
-    left: 20.5rem;
+    height: 0.1rem;
+    top: 16.9rem;
+    left: 14rem;
+    color: rgb(83, 83, 244);
 }
 
 .btn4 {
@@ -159,7 +161,8 @@ label {
 
 .login1 {
     position: absolute;
-    top: 16rem;
+    top: 17rem;
+    left: 15rem;
 }
 
 .login2 {
@@ -178,7 +181,7 @@ label {
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 1.5rem; /* Adjusted font size for smaller screens */
-        align-items: center; /* Adjusted left position for smaller screens */
+        margin-left: -2rem;
     }
 
     h2 {
@@ -194,9 +197,9 @@ label {
 
     .form h3 {
         position: absolute;
-        left: 8.5rem;
+        left: 5.5rem;
         font-size: medium;
-        margin-top: 7.5rem;
+        margin-top: 5.5rem;
     }
 
     .form p{
@@ -210,6 +213,15 @@ label {
         background-color: #8e44ad;
         width: 50%;
         cursor: pointer;
-        margin-left: 6rem;
+        margin-left: 5.5rem;
+    }
+
+    .para1 {
+        position: absolute;
+        width: 10rem;
+        height: 0.1rem;
+        top: 14.8rem;
+        left: 14rem;
+        color: rgb(83, 83, 244);
     }
 }
